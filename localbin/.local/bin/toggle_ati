@@ -1,0 +1,27 @@
+#!/bin/bash
+
+modconfig=/etc/modprobe.d/radeon.conf
+
+if grep -qe '^\s*blacklist\s*radeon\s*$' $modconfig
+then
+    sudo sed -i '/^\s*blacklist\s*radeon\s*$/s/^/#/' $modconfig
+    echo 'Load radeon on start'
+    #sudo modprobe radeon
+    #echo 'Load radeon'
+    #sudo ln -sf /etc/X11/xorg.conf{.radeon,}
+    #echo 'Create link to xorg.conf.radeon'
+    sed -i '/^\s*#\s*xrandr.*setprovider.*sink.*$/s@^#@@' ~/.xprofile
+    echo 'Set sink on x start'
+else
+    if grep -qe '^#\s*blacklist\s*radeon\s*$' $modconfig
+    then
+        sudo sed -i '/^#\s*blacklist\s*radeon\s*$/s/^#//' $modconfig
+    else
+        sudo bash -c "echo 'blacklist radeon' >> $modconfig"
+    fi
+    echo 'Block radeon on start'
+    #sudo rm /etc/X11/xorg.conf
+    #echo 'Remove link to xorg.conf.radeon'
+    sed -i '/^\s*xrandr.*setprovider.*sink.*$/s@^@#@' ~/.xprofile
+    echo 'Do not set sink on x start'
+fi

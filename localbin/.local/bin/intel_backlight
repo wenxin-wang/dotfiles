@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sysfile=/sys/class/backlight/intel_backlight/brightness 
+
+if [ $# -eq 0 ]; then
+  cat $sysfile
+else
+  sudo bash -c "echo $1 > $sysfile"
+fi

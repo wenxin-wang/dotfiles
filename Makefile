@@ -1,4 +1,4 @@
-pkgs ?= shell python ranger i3wm polybar dunst fcitx font pulse
+pkgs ?= shell python ranger i3wm polybar dunst fcitx font pulse localbin
 
 all: pre
 	stow -t $(HOME) $(foreach p,$(pkgs),$(p))
@@ -12,4 +12,5 @@ del:
 .PHONY: pre
 
 pre:
+	mkdir -p ~/.local/bin
 	mkdir -p ~/.config/ranger

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+config=/etc/systemd/logind.conf
+
+action=''
+case $1 in
+    h|help)
+        echo 'Actions:'
+        echo 'h|help'
+        echo 's|show'
+        echo 'i|ignore'
+        echo 'd|default'
+        echo '*|toggle'
+        exit 0
+        ;;
+    s|show)
+        grep 'HandleLidSwitch' $config
+        exit 0
+        ;;
+    i|ignore)
+        action=ignore
+        ;;
+    d|default)
+        action=default
+        ;;
+    *)
+        action=toggle
+        ;;
+esac
+
+
+if grep -qe '^\s*HandleLidSwitch\s*=\s*ignore\s*$' $config # Current ignore
+then
+    if [ $action == 'toggle' -o $action == 'default' ]
+    then
+        sudo sed -i '/^\s*HandleLidSwitch\s*=\s*ignore\s*$/s/^\s*/#/' $config
+        echo 'Close lid action: Default'
+    fi
+else
+    if [ $action == 'toggle' -o $action == 'ignore' ]
+    then
+        if grep -qe '^\s*#*\s*HandleLidSwitch\s*=\s*ignore\s*$' $config
+        then
+            sudo sed -i '/^\s*#\s*HandleLidSwitch\s*=\s*ignore\s*$/s/^\s*#*//' $config
+        else
+            sudo bash -c "echo 'HandleLidSwitch=ignore' >> $config"
+        fi
+        echo 'Close lid action: Ignore'
+    fi
+fi
+
+sudo systemctl restart systemd-logind
