@@ -1,15 +1,17 @@
-pkgs ?= shell python ranger i3wm polybar dunst fcitx font pulse localbin
+pkgs ?= shell localbin git python ranger i3wm polybar dunst fcitx font pulse X
+
+STOW_ARGS = -t $(HOME) --ignore='.*\.bak'
 
 all: pre
-	stow -t $(HOME) $(foreach p,$(pkgs),$(p))
+	stow $(STOW_ARGS) $(foreach p,$(pkgs),$(p))
 
 re:
-	stow -t $(HOME) $(foreach p,$(pkgs),-R $(p))
+	stow $(STOW_ARGS) $(foreach p,$(pkgs),-R $(p))
 
 del:
-	stow -t $(HOME) $(foreach p,$(pkgs),-D $(p))
+	stow $(STOW_ARGS) $(foreach p,$(pkgs),-D $(p))
 
-.PHONY: pre
+.PHONY: all re del pre
 
 pre:
 	mkdir -p ~/.local/bin

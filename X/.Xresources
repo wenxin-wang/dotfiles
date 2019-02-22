@@ -1,0 +1,95 @@
+!! XTerm Settings
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+XTerm.vt100.translations: #override \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+!! Urxvt Settings
+
+! Fonts
+!URxvt.font: xft:WenQuanYi Zen Hei Mono:size=12:antialias=true
+!URxvt.font: xft:WenQuanYi Zen Hei Mono:size=12
+!URxvt.font: xft:Sarasa Term SC:style=Regular:size=12,xft:WenQuanYi Zen Hei Mono:size=12
+URxvt.font: xft:Sarasa Mono SC:style=Regular:size=13
+!URxvt.letterSpace: -1
+!URxvt.letterSpace: -4
+
+! Scroll Bar
+URxvt.scrollBar:False
+!buffer
+URxvt.saveLines:400
+!URxvt.preeditType:Root
+
+! Perl extensions
+!URxvt.perl-ext-common:default,clipboard,matcher,keyboard-select
+URxvt.perl-ext-common:default,clipboard,matcher,font-size
+!URxvt.perl-ext-common:default,clipboard-osc,matcher
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-launcher: google-chrome-stable
+URxvt.underlineURLs: False
+URxvt.matcher.button: 3
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+!URxvt.keysym.C-slash:  font-size:show
+
+rofi.color-enabled: true
+rofi.color-window: #1c1c22, #3e646f, #3e646f
+rofi.color-normal: #1c1c22, #d9d6ca, #85aab6, #d9d6ca, #78824B
+rofi.color-active: #1c1c22, #d9d6ca, #85aab6, #d9d6ca, #78824B
+rofi.color-urgent: #1c1c22, #d9d6ca, #85aab6, #d9d6ca, #78824B
+
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.lines: 5
+! rofi.font: Source Code Pro Semibold 10.5
+rofi.font: Sarasa Mono SC Bold 13
+rofi.bw: 1
+rofi.columns: 2
+rofi.padding: 5
+rofi.fixed-num-lines: true
+rofi.hide-scrollbar: true
+
+! ! Xft settings
+Xft.dpi: 120
+! Xft.dpi: 96
+! Xft.autohint: 0
+! Xft.lcdfilter:  lcddefault
+! Xft.hintstyle:  hintfull
+! Xft.hinting: 1
+! Xft.antialias: 1
+! Xft.rgba: rgb
+
+! Xft.lcdfilter: lcdlight
+! Xft.dpi: 124x125
+! !Xft.dpi: 96
+! ! Xft.antialias: false
+! Xft.rgba: rgb
+! Xft.hinting: true
+! Xft.hinstyle: hintslight
+! Xft.autohint: true
+
+!-- Xft settings -- !
+! Xft.antialias:  1
+! Xft.autohint:   0
+! Xft.dpi:        96
+! Xft.hinting:    1
+! Xft.hintstyle:  hintfull
+! Xft.lcdfilter:  lcddefault
+! Xft.rgba:       rgb
+
+! #include ".Xresources.d/base16-themes/base16-ashes.dark.xresources"
+! #include ".Xresources.d/base16-themes/base16-atelierheath.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-atelierheath.light.xresources"
+! #include ".Xresources.d/base16-themes/base16-paraiso.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-flat.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-isotope.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-londontube.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-londontube.dark.256.xresources"
+#include ".Xresources.d/base16-themes/base16-monokai.dark.256.xresources"
