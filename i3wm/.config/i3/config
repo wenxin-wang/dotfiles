@@ -20,6 +20,11 @@ floating_modifier $mod
 bindsym --release Print exec --no-startup-id gnome-screenshot
 bindsym --release $mod+Print exec --no-startup-id gnome-screenshot -i
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
 
@@ -69,7 +74,7 @@ bindsym $mod+Shift+Right move right
 # Split orientation
 bindsym $mod+i split h
 bindsym $mod+u split v
-bindsym $mod+q split toggle
+# bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -250,7 +255,7 @@ bindsym $mod+Shift+b exec --no-startup-id /$HOME/.config/polybar/msg.sh top cmd 
 # Theme colors
 # client.focused #4F99D3 #4F99D3 #151718 #9FCA56
 # client.focused #d9d6ca #1c1c22 #d9d6ca #5c828d #5c828d
-client.focused #d9d6ca #3e646f #1c1c22 #5c828d #5c828d
+client.focused #d9d6ca #5c828d #1c1c22 #5c828d #5c828d
 client.focused_inactive #d9d6ca #1c1c22 #d9d6ca #3e646f #3e646f
 client.unfocused #d9d6ca #1c1c22 #d9d6ca #3e646f #3e646f
 client.urgent #d9d6ca #1c1c22 #d9d6ca #3e646f #3e646f

@@ -40,8 +40,7 @@ fixed-center = true
 
 modules-left = i3
 modules-center = date
-# modules-right = pulseaudio battery
-modules-right = battery
+modules-right = pulseaudio battery
 
 tray-position = right
 
@@ -65,15 +64,15 @@ label-mode-padding = 2
 label-mode-foreground = #1c1c22
 label-mode-background = #1c1c22
 
-label-focused = %index%
-label-focused-background = #3e646f
-label-focused-foreground = #1c1c22
-label-focused-padding = 2
-
 label-unfocused = %index%
-label-unfocused-background = #5c828d
+label-unfocused-background = #3e646f
 label-unfocused-foreground = #1c1c22
 label-unfocused-padding = 2
+
+label-focused = %index%
+label-focused-background = #5c828d
+label-focused-foreground = #1c1c22
+label-focused-padding = 2
 
 label-visible = %index%
 label-visible-background = #5c828d
