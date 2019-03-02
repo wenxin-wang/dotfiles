@@ -1,5 +1,6 @@
 [bar/template]
 
+dpi = 120
 monitor-fallback = eDP1
 
 width = 100%
@@ -43,6 +44,8 @@ modules-center = date
 modules-right = pulseaudio battery
 
 tray-position = right
+# tray-scale = 1.25
+tray-maxsize = 1000
 
 [bar/bottom]
 
@@ -64,8 +67,13 @@ label-mode-padding = 2
 label-mode-foreground = #1c1c22
 label-mode-background = #1c1c22
 
+label-visible = %index%
+label-visible-background = #3e646f
+label-visible-foreground = #1c1c22
+label-visible-padding = 2
+
 label-unfocused = %index%
-label-unfocused-background = #3e646f
+label-unfocused-background = #4d737e
 label-unfocused-foreground = #1c1c22
 label-unfocused-padding = 2
 
@@ -73,11 +81,6 @@ label-focused = %index%
 label-focused-background = #5c828d
 label-focused-foreground = #1c1c22
 label-focused-padding = 2
-
-label-visible = %index%
-label-visible-background = #5c828d
-label-visible-foreground = #1c1c22
-label-visible-padding = 2
 
 label-urgent = %index%
 label-urgent-background = #BA2922

@@ -21,8 +21,8 @@ bindsym --release Print exec --no-startup-id gnome-screenshot
 bindsym --release $mod+Print exec --no-startup-id gnome-screenshot -i
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
@@ -158,7 +158,10 @@ bindsym $mod+Shift+o move workspace to output up
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="Calamares"] floating enable border normal
+for_window [class="Nm-connection-editor"] floating enable border pixel 1
+for_window [class="Crossover"] floating enable border pixel 1 floating_maximum_size 100 x 100
 for_window [class="Clipgrab"] floating enable
+for_window [class="zoom"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
@@ -183,6 +186,7 @@ for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [title="Save File"] floating enable; border pixel 1; move position center #; resize set 2048 1536
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
