@@ -186,7 +186,7 @@ for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-for_window [title="Save File"] floating enable; border pixel 1; move position center #; resize set 2048 1536
+for_window [title="Save File"] floating enable; border pixel 1; resize set 2048 1536; move position center #
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -250,7 +250,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 # exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/bar.sh top
-exec_always --no-startup-id /$HOME/.config/polybar/bar.sh bottom; sleep 0.5; /$HOME/.config/polybar/msg.sh bottom cmd hide
+exec_always --no-startup-id /$HOME/.config/polybar/bar-hide.sh bottom
 
 # Polybar
 bindsym $mod+b exec --no-startup-id /$HOME/.config/polybar/msg.sh bottom cmd toggle

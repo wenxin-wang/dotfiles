@@ -1,4 +1,5 @@
 [bar/template]
+monitor = ${env:MONITOR:}
 
 dpi = 120
 monitor-fallback = eDP1
