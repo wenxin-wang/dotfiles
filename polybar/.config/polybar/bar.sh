@@ -19,7 +19,8 @@ for pid_file in $RUN_DIR/$barname*.pid; do
     rm $pid_file
 done
 
-if type "xrandr"; then
+# if [[ z$SINGLE == z ]] && type "xrandr"; then
+if [[ z$SINGLE == z ]] && type "xrandr"; then
     for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
 	pid_file=$RUN_DIR/$barname-$m.pid
 	# MONITOR=$m polybar --reload example &

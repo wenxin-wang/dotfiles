@@ -61,6 +61,7 @@ modules-right = powermenu
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
+pin-workspaces = true
 index-sort = true
 wrapping-scroll = false
 
@@ -90,7 +91,7 @@ label-urgent-padding = 2
 [module/wlan]
 type = internal/network
 interface = wlp58s0
-interval = 3.0
+interval = 10
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-foreground = #1c1c22

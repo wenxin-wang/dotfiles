@@ -29,9 +29,9 @@ URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-launcher: google-chrome-stable
 URxvt.underlineURLs: False
 URxvt.matcher.button: 3
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.4-c: perl:clipboard:copy
+URxvt.keysym.4-v: perl:clipboard:paste
+URxvt.keysym.S-4-v: perl:clipboard:paste_escaped
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
 URxvt.keysym.C-S-Up:   font-size:incglobal
@@ -49,7 +49,7 @@ rofi.separator-style: solid
 rofi.sidebar-mode: false
 rofi.lines: 5
 ! rofi.font: Source Code Pro Semibold 10.5
-rofi.font: Sarasa Mono SC Bold 13
+rofi.font: Sarasa Mono SC Bold 16
 rofi.bw: 1
 rofi.columns: 2
 rofi.padding: 5
