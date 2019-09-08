@@ -10,6 +10,8 @@ focus_follows_mouse no
 #force_focus_wrapping yes
 workspace_auto_back_and_forth yes
 
+workspace_layout tabbed
+
 # font xft:URWGothic-Book 12
 #font pango:WenQuanYi Zen Hei Mono, Meslo LG M 12
 font xft:Sarasa Mono SC 13
@@ -77,7 +79,7 @@ bindsym $mod+u split v
 # bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Mod1+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+Mod1+s layout stacking
@@ -280,9 +282,9 @@ client.background #1c1c22
 
 hide_edge_borders none
 
-bindsym $mod+y border normal
-bindsym $mod+t border 1pixel
-bindsym $mod+g border none
+bindsym $mod+Mod1+y border normal
+bindsym $mod+Mod1+t border 1pixel
+bindsym $mod+Mod1+g border none
 
 # Gaps
 gaps inner 5
