@@ -80,9 +80,9 @@ bindsym $mod+u split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Mod1+s layout stacking
+bindsym $mod+Mod1+w layout tabbed
+bindsym $mod+Mod1+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -94,9 +94,9 @@ bindsym $mod+Control+space focus mode_toggle
 bindsym $mod+Control+s sticky toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+Control+a focus parent
 # focus the child container
-bindsym $mod+Control+a focus child
+bindsym $mod+Shift+a focus child
 
 # navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
@@ -195,7 +195,7 @@ for_window [urgent=latest] focus
 bindsym $mod+Control+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Control+z restart
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Control+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
@@ -218,7 +218,7 @@ mode "$mode_system" {
 }
 
 # Resize window (you can also use the mouse for that)
-bindsym $mod+r mode "resize"
+bindsym $mod+Control+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
         # Pressing left will shrink the window’s width.

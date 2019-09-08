@@ -1,4 +1,4 @@
-pkgs ?= shell localbin git python ranger i3wm polybar fcitx font pulse X
+pkgs ?= shell localbin git python ranger i3wm polybar fcitx font pulse X gtk2 gtk3
 
 STOW_ARGS = -t $(HOME) --ignore='.*\.bak'
 
