@@ -1,3 +1,3 @@
-NPM_PACKAGES="${HOME}/.npm-packages"
-
-PATH="$NPM_PACKAGES/bin:$PATH"
+export PATH="$HOME/.node/bin:$PATH"  
+export NODE_PATH="$HOME/.node/lib/node_modules:$NODE_PATH"  
+export MANPATH="$HOME/.node/share/man:$MANPATH"  

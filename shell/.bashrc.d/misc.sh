@@ -80,3 +80,5 @@ orgdatefile() {
 
 alias newsmth="luit -encoding gbk ssh wwxwwx@newsmth.net"
 alias newsmth-expect='expect -c "set timeout 60; spawn luit -encoding gbk ssh newsmth.net; interact timeout 30  {send \"\000\"}; "'
+
+alias nv='nvim'
