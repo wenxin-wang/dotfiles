@@ -1,0 +1,297 @@
+{
+  "Plugin Updater plugin:plugin updater dialog": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAHLAAABFgAABcsAAAMWAAABzgAAARYAAAXIAAADEwAAAAAAAAAAB4AAAAHOAAABFgAABcgAAAMT"
+  }, 
+  "action-layout-toolbar": [
+    "Add Books", 
+    "Edit Metadata", 
+    null, 
+    "Convert Books", 
+    "View", 
+    null, 
+    "Store", 
+    "Donate", 
+    "Fetch News", 
+    "Help", 
+    null, 
+    "Remove Books", 
+    "Choose Library", 
+    "Save To Disk", 
+    "Connect Share", 
+    "Tweak ePub", 
+    "Preferences", 
+    "Annotations", 
+    "Zotero Metadata Importer"
+  ], 
+  "action-layout-toolbar-device": [
+    "Add Books", 
+    "Edit Metadata", 
+    null, 
+    "Convert Books", 
+    "View", 
+    "Send To Device", 
+    null, 
+    null, 
+    "Location Manager", 
+    null, 
+    null, 
+    "Fetch News", 
+    "Save To Disk", 
+    "Store", 
+    "Connect Share", 
+    null, 
+    "Remove Books", 
+    null, 
+    "Help", 
+    "Preferences", 
+    "Annotations", 
+    "Zotero Metadata Importer"
+  ], 
+  "advanced search dialog current tab": 1, 
+  "advanced_search_simple_tab_focused_field": "title_box", 
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAEAAAADAAABGgAAAcgAAAEcAf////8BAAAAAQA="
+  }, 
+  "book_details_splitter_horizontal_state": [
+    true, 
+    200
+  ], 
+  "book_info_dialog_layout": [
+    {
+      "__class__": "bytearray", 
+      "__value__": "AdnQywADAAAAAAH3AAAAQgAABYoAAAQYAAAB+gAAAEIAAAWHAAAEFQAAAAAAAAAAB4AAAAH6AAAAQgAABYcAAAQV"
+    }, 
+    {
+      "__class__": "bytearray", 
+      "__value__": "AAAA/wAAAAEAAAACAAABXgAAAV4B/////wEAAAABAA=="
+    }
+  ], 
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAFUA/////wEAAAABAA=="
+  }, 
+  "catalog_bibtex_addfiles": true, 
+  "catalog_bibtex_bib_cit": "{authors}{id}", 
+  "catalog_bibtex_bib_entry": 0, 
+  "catalog_bibtex_bibfile_enc": 0, 
+  "catalog_bibtex_bibfile_enctag": 0, 
+  "catalog_bibtex_db_fields": [
+    "title", 
+    "title_sort", 
+    "author_sort", 
+    "authors", 
+    "comments", 
+    "cover", 
+    "formats", 
+    "id", 
+    "isbn", 
+    "library_name", 
+    "ondevice", 
+    "pubdate", 
+    "publisher", 
+    "rating", 
+    "series_index", 
+    "series", 
+    "size", 
+    "tags", 
+    "timestamp", 
+    "uuid", 
+    "languages", 
+    "identifiers"
+  ], 
+  "catalog_bibtex_impcit": true, 
+  "convert_bulk_dialog_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAAnAAAAQgAAB2YAAAQYAAAAKgAAAEIAAAdjAAAEFQAAAAAAAAAAB4AAAAAqAAAAQgAAB2MAAAQV"
+  }, 
+  "convert_single_dialog_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAABVAAAAKwAAB5QAAAQBAAAAWAAAACsAAAeRAAAD/gAAAAAAAAAAB4AAAABYAAAAKwAAB5EAAAP+"
+  }, 
+  "cover_browser_splitter_vertical_state": [
+    false, 
+    300
+  ], 
+  "cover_grid_color": [
+    80, 
+    80, 
+    80
+  ], 
+  "cover_grid_texture": null, 
+  "custom_colors_for_color_dialog": [
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ]
+  ], 
+  "default_author_link": null, 
+  "diff_dialog_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAHeAAAAKwAABZkAAAQBAAAB4QAAACsAAAWWAAAD/gAAAAAAAAAAB4AAAAHhAAAAKwAABZYAAAP+"
+  }, 
+  "exim-calibre-geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAImAAAA6QAABUsAAANDAAACKQAAAOkAAAVIAAADQAAAAAAAAAAAB4AAAAIpAAAA6QAABUgAAANA"
+  }, 
+  "grid view visible": false, 
+  "job-detail-view-dialog-geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAJRAAAA8wAABRIAAALpAAACVAAAAPMAAAUPAAAC5gAAAAAAAAAAB4AAAAJUAAAA8wAABQ8AAALm"
+  }, 
+  "jobs view column layout3": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAA"
+  }, 
+  "jobs_dialog_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAPnAAABpQAABmUAAAPFAAAD6gAAAaUAAAZiAAADwgAAAAAAAAAAB4AAAAPqAAABpQAABmIAAAPC"
+  }, 
+  "library_usage_stats": {
+    "/home/wenxin/00Collection/Calibre": 25
+  }, 
+  "metadata_single_gui_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAADJAAAApwAABvwAAAO1AAAAzAAAAKcAAAb5AAADsgAAAAAAAAAAB4AAAADMAAAApwAABvkAAAOy"
+  }, 
+  "metasingle_window_geometry3": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAABFAAAAFAAAB4QAAAQcAAAASAAAABQAAAeBAAAEGQAAAAAAAAAAB4AAAABIAAAAFAAAB4EAAAQZ"
+  }, 
+  "plugin config dialog:File type:DeDRM": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAMFAAABLAAABGwAAAMBAAADCAAAASwAAARpAAAC/gAAAAAAAAAAB4AAAAMIAAABLAAABGkAAAL+"
+  }, 
+  "plugin config dialog:User interface action:Annotations": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAALcAAABJAAABKYAAAM2AAAC3wAAASQAAASjAAADMwAAAAAAAAAAB4AAAALfAAABJAAABKMAAAMz"
+  }, 
+  "plugin config dialog:文件类型:DeDRM": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAS8AAACWwAABfgAAAQIAAAEvwAAAlsAAAX1AAAEBQAAAAAAAAAAB4AAAAS/AAACWwAABfUAAAQF"
+  }, 
+  "preferences dialog geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAHtAAAAkQAABZQAAANjAAAB8AAAAJEAAAWRAAADYAAAAAAAAAAAB4AAAAHwAAAAkQAABZEAAANg"
+  }, 
+  "quick_start_guide_added": true, 
+  "quickview visible": false, 
+  "recently_used_languages": [
+    "Chinese"
+  ], 
+  "replace_scene_breaks_history": [
+    "", 
+    "<hr />", 
+    "∗ ∗ ∗", 
+    "• • •", 
+    "♦ ♦ ♦", 
+    "† †", 
+    "‡ ‡ ‡", 
+    "∞ ∞ ∞", 
+    "¤ ¤ ¤"
+  ], 
+  "search bar visible": true, 
+  "show_emblems": false, 
+  "tag browser search box visible": false, 
+  "tag_browser_splitter_horizontal_state": [
+    true, 
+    200
+  ], 
+  "tag_editor_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAJvAAAAmAAABPQAAAM0AAACcgAAAJgAAATxAAADMQAAAAAAAAAAB4AAAAJyAAAAmAAABPEAAAMx"
+  }
+}

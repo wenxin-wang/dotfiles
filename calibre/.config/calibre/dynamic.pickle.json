@@ -1,0 +1,34 @@
+{
+  "DeDRMImport Kindle for Android backup file": "/home/wenxin", 
+  "DeDRMimport_Kindle_for_Mac_and_PC_Key_keys": "/mnt/C/Users/wraxwing/Downloads", 
+  "Export Catalog Directory": "/home/wenxin", 
+  "add a plugin dialog": "/home/wenxin/tmp/a", 
+  "add books dialog dir": "/home/wenxin/00Collection/Papers/distributed system/filesystem", 
+  "catalog_add_to_library": true, 
+  "catalog_last_used_title": "My books", 
+  "catalog_preferred_format": "BIB", 
+  "catalog_sync_to_device": false, 
+  "catalog_window_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAAZAAAACgAAB1gAAAQSAAAAHAAAAAoAAAdVAAAEDwAAAAAAAAAAB4AAAAAcAAAACgAAB1UAAAQP"
+  }, 
+  "database location dialog": "/home/wenxin/00Collection/Calibre", 
+  "notified-version-updates": {
+    "__class__": "set", 
+    "__value__": [
+      "4.12"
+    ]
+  }, 
+  "sort_history": [
+    [
+      "timestamp", 
+      false
+    ], 
+    [
+      "timestamp", 
+      false
+    ]
+  ], 
+  "welcome_wizard_device": "android_phone_with_kindle", 
+  "welcome_wizard_was_run": true
+}

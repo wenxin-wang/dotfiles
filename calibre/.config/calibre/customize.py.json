@@ -1,0 +1,17 @@
+{
+  "disabled_plugins": {
+    "__class__": "set", 
+    "__value__": []
+  }, 
+  "enabled_plugins": {
+    "__class__": "set", 
+    "__value__": []
+  }, 
+  "filetype_mapping": {}, 
+  "plugin_customization": {}, 
+  "plugins": {
+    "Annotations": "/home/wenxin/.config/calibre/plugins/Annotations.zip", 
+    "DeDRM": "/home/wenxin/.config/calibre/plugins/DeDRM.zip", 
+    "Zotero Metadata Importer": "/home/wenxin/.config/calibre/plugins/Zotero Metadata Importer.zip"
+  }
+}
