@@ -1,0 +1,18 @@
+[Added Associations]
+image/png=org.gnome.gThumb.desktop;
+audio/x-wav=audacious.desktop;audacity.desktop;
+application/pdf=org.gnome.Evince.desktop;
+application/epub+zip=com.github.johnfactotum.Foliate.desktop;
+
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/discord-610508934456934412=discord-610508934456934412.desktop
+application/epub+zip=com.github.johnfactotum.Foliate.desktop
+application/pdf=org.kde.okular.desktop
+image/jpeg=org.gnome.gThumb.desktop
+application/vnd.comicbook+zip=mcomix.desktop
+text/x-log=emacs.desktop;
