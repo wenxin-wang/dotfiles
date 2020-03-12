@@ -16,3 +16,6 @@ application/pdf=org.kde.okular.desktop
 image/jpeg=org.gnome.gThumb.desktop
 application/vnd.comicbook+zip=mcomix.desktop
 text/x-log=emacs.desktop;
+text/plain=Emacs Client.desktop
+application/json=Emacs Client.desktop
+application/octet-stream=Emacs Client.desktop
