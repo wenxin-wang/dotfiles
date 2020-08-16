@@ -63,19 +63,52 @@ panrst2html() {
 alias mnt='udevil mount $@'
 alias umnt='udevil umount $@'
 
-datedir() {
-    mkdir -p $(date +%F)
+dtd() {
+    if [ $# -eq 0 ]; then
+        local d=$(date +%F)
+    else
+        local d=$(date +%F)-"$@"
+    fi
+    mkdir "$d"
 }
 
-datefile() {
-    local ext=$1
-    shift
-    touch $(date +%F)$@.$ext
+mthd() {
+    if [ $# -eq 0 ]; then
+        local d=$(date +%Y-%m)
+    else
+        local d=$(date +%Y-%m)-"$@"
+    fi
+    mkdir "$d"
 }
 
-orgdatefile() {
-    shift
-    touch $(date +%F)$@.org
+dtf() {
+    if [ $# -eq 0 ]; then
+        local f=$(date +%F)
+    else
+        local f=$(date +%F)-"$@"
+    fi
+    touch "$f"
+}
+
+mthf() {
+    if [ $# -eq 0 ]; then
+        local f=$(date +%Y-%m)
+    else
+        local f=$(date +%Y-%m)-"$@"
+    fi
+    touch "$f"
+}
+
+mdtf() {
+    local d=$(date +%F)
+    local m=${d%-*}
+    mkdir -p $m
+    if [ $# -eq 0 ]; then
+        local f=$m/$d
+    else
+        local f=$m/$d-"$@"
+    fi
+    touch "$f"
 }
 
 alias newsmth="luit -encoding gbk ssh wwxwwx@newsmth.net"

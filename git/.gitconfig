@@ -5,6 +5,7 @@
     cm = commit
     chp = cherry-pick
     cmm = commit -m
+    cam = commit -a -m
     cma = commit --amend
     cmane = commit --amend --no-edit
     co = checkout

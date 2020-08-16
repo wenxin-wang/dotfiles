@@ -10,12 +10,13 @@
   "catalog_sync_to_device": false, 
   "catalog_window_geom": {
     "__class__": "bytearray", 
-    "__value__": "AdnQywADAAAAAAAZAAAACgAAB1gAAAQSAAAAHAAAAAoAAAdVAAAEDwAAAAAAAAAAB4AAAAAcAAAACgAAB1UAAAQP"
+    "__value__": "AdnQywADAAAAAAAcAAAAFAAAB1sAAAQcAAAAHwAAABQAAAdYAAAEGQAAAAAAAAAAB4AAAAAfAAAAFAAAB1gAAAQZ"
   }, 
   "database location dialog": "/home/wenxin/00Collection/Calibre", 
   "notified-version-updates": {
     "__class__": "set", 
     "__value__": [
+      "4.13", 
       "4.12"
     ]
   }, 
