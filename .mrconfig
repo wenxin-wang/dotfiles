@@ -1,3 +1,9 @@
+[DEFAULT]
+git_gc = git gc "$@"
+jobs = 5
+
+[$HOME/.config/vcsh/repo.d/dotconfig.git]
+checkout = vcsh clone git@github.com:wenxin-wang/dotfiles.git dotconfig
 
 [.Xresources.d/base16-themes]
 checkout = git clone 'https://github.com/chriskempson/base16-xresources.git' 'base16-themes'
