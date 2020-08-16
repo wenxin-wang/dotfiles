@@ -1,0 +1,7 @@
+#GNOME_KEYRING_CONTROL='false' # just a nonsense/invalid value
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+LC_CTYPE="zh_CN.utf-8"
+QT_QPA_PLATFORMTHEME="qt5ct"
