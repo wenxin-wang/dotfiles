@@ -65,38 +65,46 @@ alias umnt='udevil umount $@'
 
 dtd() {
     if [ $# -eq 0 ]; then
-        local d=$(date +%F)
-    else
-        local d=$(date +%F)-"$@"
+        mkdir -p $(date +%F)
+        return
     fi
-    mkdir "$d"
+    local d
+    for d in $@; do
+        mkdir -p $(date +%F)-"$@"
+    done
 }
 
 mthd() {
     if [ $# -eq 0 ]; then
-        local d=$(date +%Y-%m)
-    else
-        local d=$(date +%Y-%m)-"$@"
+        mkdir -p $(date +%Y-%m)
+	return
     fi
-    mkdir "$d"
+    local d
+    for d in $@; do
+        mkdir -p $(date +%Y-%m)-"$d"
+    done
 }
 
 dtf() {
     if [ $# -eq 0 ]; then
-        local f=$(date +%F)
-    else
-        local f=$(date +%F)-"$@"
+        touch $(date +%F)
+	return
     fi
-    touch "$f"
+    local f
+    for f in $@; do
+        touch $(date +%F)-"$f"
+    done
 }
 
 mthf() {
     if [ $# -eq 0 ]; then
-        local f=$(date +%Y-%m)
-    else
-        local f=$(date +%Y-%m)-"$@"
+        touch $(date +%Y-%m)
+	return
     fi
-    touch "$f"
+    local f
+    for f in $@; do
+        touch $(date +%Y-%m)-"$f"
+    done
 }
 
 mdtf() {
@@ -104,17 +112,33 @@ mdtf() {
     local m=${d%-*}
     mkdir -p $m
     if [ $# -eq 0 ]; then
-        local f=$m/$d
-    else
-        local f=$m/$d-"$@"
+        touch $m/$d
+	return
     fi
-    touch "$f"
+    local f
+    for f in $@; do
+        touch $m/$d-"$f"
+    done
 }
 
 dtmv() {
-    local s="$@"
-    local d=$(date +%F)-"$@"
-    mv "$s" "$d"
+    local src
+    for src in $@; do
+        local d=$(stat -c '%w' "$src" | cut -d' ' -f1)
+        local dst=$d-"$src"
+        mv "$src" "$dst"
+    done
+}
+
+mdtmv() {
+    local src
+    for src in $@; do
+        local d=$(stat -c '%w' "$src" | cut -d' ' -f1)
+        local m=${d%-*}
+        local dst=$d-"$src"
+        mkdir -p $m
+        mv "$src" $m/"$dst"
+    done
 }
 
 alias newsmth="luit -encoding gbk ssh wwxwwx@newsmth.net"
