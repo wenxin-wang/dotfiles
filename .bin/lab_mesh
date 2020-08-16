@@ -1,0 +1,49 @@
+#!/bin/bash
+
+_global_v6() {
+    local addr=$(ip -6 addr show dev $IFACE | grep inet6 | grep global | awk '{print $2}')
+    [ z"$addr" != z ] && ! (
+            grep -q '^fe8' <<<$addr ||
+                grep -q '^fea' <<<$addr ||
+                grep -q '^fc' <<<$addr ||
+                grep -q '^fd' <<<$addr
+        )
+}
+
+_has_v6() {
+    [ z"$IFACE" != z ] && _global_v6
+}
+
+_start() {
+    def=$(route -n | awk '$4 == "UG" {print $2}' | head -n1)
+    echo wan default: $def
+    sudo ip r add 168.235.94.91 via $def
+    sudo ip r add 202.38.101.0/27 via $def
+    sudo ip r add 121.194.167.0/24 via $def
+    iproute2-batch-load.sh $def
+    sudo systemctl start tinc
+    sudo systemctl start babeld
+}
+
+_stop() {
+    iproute2-batch-unload.sh
+    sudo ip r del 168.235.94.91
+    sudo ip r del 202.38.101.0/27
+    sudo ip r del 121.194.167.0/24
+    sudo systemctl stop babeld
+    sudo systemctl stop tinc
+    ip r
+}
+
+if [ z"$1" == z1 ]; then
+    echo starting
+    _start
+elif [ z"$1" == z2 ]; then
+    echo reloading
+    _stop
+    sleep 2
+    _start
+else
+    echo stopping
+    _stop
+fi

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+curl 'http://net.tsinghua.edu.cn/do_login.php' --data 'action=logout'
+echo

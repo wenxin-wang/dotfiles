@@ -1,0 +1,7 @@
+#!/bin/bash
+
+XKBDIR=~/.local/share/xkb
+XKBMAPFILE=$XKBDIR/keymap/${1:-$HOSTNAME}
+[ -r "$XKBMAPFILE" ] || XKBMAPFILE="${XKBMAPFILE%/*}/default"
+
+xkbcomp -I"$XKBDIR" "$XKBMAPFILE" "${DISPLAY%%.*}" -w 1

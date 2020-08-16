@@ -1,0 +1,40 @@
+#!/bin/bash
+
+echo ${BASH_SOURCE[0]%/*}
+exit
+
+
+_start() {
+    def=$(route -n | awk '$4 == "UG" {print $2}' | head -n1)
+    echo wan default: $def
+    sudo ip r add 168.235.94.91 via $def
+    iproute2-batch-load.sh $def
+    sudo systemctl start tinc@$S
+    sudo systemctl status tinc@$S
+}
+
+_stop() {
+    iproute2-batch-unload.sh
+    sudo systemctl stop tinc
+    ip r
+}
+
+if [ $# -ne 2 ]; then
+    echo usage: $0 0/1/2 service
+    exit 1
+fi
+
+S=$2
+
+if [ z"$1" == z1 ]; then
+    echo starting
+    _start
+elif [ z"$1" == z2 ]; then
+    echo reloading
+    _stop
+    sleep 2
+    _start
+else
+    echo stopping
+    _stop
+fi
