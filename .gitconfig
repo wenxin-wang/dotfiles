@@ -19,9 +19,6 @@
     artz = "!p=$(pwd); n=$(basename $p); b=$(git describe --tags --abbrev=0); git archive --format=zip --prefix=$n-$b/ -o $p-$b.zip $b"
     vicma = "!EDITOR=vi git cma"
     vimcma = "!EDITOR=vim git cma"
-[user]
-    email = i@wenxinwang.me
-    name = Wenxin Wang
 [push]
     default = simple
 [diff]
@@ -36,4 +33,6 @@
 [core]
     pager = diff-so-fancy | less --tabs=4 -RFX
 [pull]
-	ff = only
+    ff = only
+[include]
+    path = .gitconfig.local
