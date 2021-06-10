@@ -27,7 +27,7 @@
         "triggerItemByInitial": false,
         "disabledModifiers": [],
         "scriptGlobals": {
-            "hotkey": "<ctrl>+p"
+            "hotkey": "<super>+<shift>+t"
         }
     },
     "folders": [],

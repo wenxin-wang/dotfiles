@@ -30,14 +30,14 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
 
-# bindsym $mod+Return exec urxvtc
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvtc
+# bindsym $mod+Return exec i3-sensible-terminal
 
 bindsym $mod+Shift+e exec evince
 bindsym $mod+Shift+f exec firefox
 #bindsym $mod+Shift+f exec google-chrome-stable
 bindsym $mod+Shift+m exec emacsclient -c -a emacs
-bindsym $mod+Shift+w exec urxvt -e ranger
+bindsym $mod+Shift+w exec urxvtc -e ranger
 bindsym $mod+Shift+n exec nautilus
 # scratchpad
 bindsym $mod+Shift+p move scratchpad
@@ -47,9 +47,9 @@ bindsym $mod+o scratchpad show
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show-icons -terminal urxvt -show drun
-bindsym $mod+Tab exec --no-startup-id rofi -show-icons -terminal urxvt -show window
-bindsym $mod+F12 exec --no-startup-id rofi -show-icons -terminal urxvt -show ssh
+bindsym $mod+d exec --no-startup-id rofi -show-icons -terminal urxvtc -show drun
+bindsym $mod+Tab exec --no-startup-id rofi -show-icons -terminal urxvtc -show window
+bindsym $mod+F12 exec --no-startup-id rofi -show-icons -terminal urxvtc -show ssh
 
 # change focus
 bindsym $mod+h focus left
@@ -244,7 +244,8 @@ mode "resize" {
 }
 
 # Autostart applications
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+# exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id nitrogen --restore
 # exec --no-startup-id nitrogen --restore
 # exec --no-startup-id nitrogen --restore
 # exec --no-startup-id nm-applet

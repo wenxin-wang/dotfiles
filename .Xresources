@@ -93,4 +93,4 @@ Xft.dpi: 120
 ! #include ".Xresources.d/base16-themes/base16-isotope.light.256.xresources"
 ! #include ".Xresources.d/base16-themes/base16-londontube.light.256.xresources"
 ! #include ".Xresources.d/base16-themes/base16-londontube.dark.256.xresources"
-#include ".Xresources.d/base16-themes/base16-monokai.dark.256.xresources"
+#include ".Xresources.d/base16-themes/xresources/base16-monokai-256.Xresources"

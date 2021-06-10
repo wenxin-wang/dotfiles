@@ -5,7 +5,7 @@ if [ $# -gt 1 ]; then
 	exit 1
 fi
 
-file=${1:-$HOME/zscratchpad/inbox.org}
+file=${1:-$HOME/zscratchpad/todo.org}
 
 # Nothing!
 if [ ! -f $file ]; then

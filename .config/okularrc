@@ -4,23 +4,47 @@ shouldShowMenuBarComingFromFullScreen=true
 shouldShowToolBarComingFromFullScreen=true
 
 [MainWindow]
+DP1 Height 1440=1370
+DP1 Height 2560x1440=1370
+DP1 Width 2560=2556
+DP1 Width 2560x1440=2556
+DP1 XPosition=2
+DP1 XPosition 2560x1440=2
+DP1 YPosition=68
+DP1 YPosition 2560x1440=68
 Height 1080=1010
 Height 1440=1370
-State=AAAA/wAAAAD9AAAAAAAAB3wAAAOiAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAAB3wAAAOaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAAFRP////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 Width 1920=1916
 Width 2560=2556
+eDP1 Height 1080=1010
+eDP1 Height 1920x1080=1010
+eDP1 Width 1920=1916
+eDP1 Width 1920x1080=1916
+eDP1 XPosition=2
+eDP1 XPosition 1920x1080=2
+eDP1 YPosition=68
+eDP1 YPosition 1920x1080=68
 
 [Recent Files]
-File1[$e]=$HOME/00Collection/Archive/Language/Japanese/Unknown_2001_新世纪日本语教程.pdf
-File2[$e]=$HOME/Zotero/storage/W7MLVVAJ/Dean - Software Engineering Advice from Building Large-Sc.pdf
-File3[$e]=$HOME/00Collection/Archive/Programming Language/Lisp/Elisp/Monnier_Sperber_Evolution of Emacs Lisp.pdf
-File4[$e]=$HOME/00Collection/Archive/Operating System/Bryant_2010_Computer systems. A programmer s perspective. 2nd edition.pdf
-File5[$e]=$HOME/00Collection/Archive/Operating System/Bryant_O'Hallaron_2016_Computer systems. A programmer s perspective. 3rd edition.pdf
-File6[$e]=$HOME/CH008.pdf
-Name1[$e]=Unknown_2001_新世纪日本语教程.pdf
-Name2[$e]=Dean - Software Engineering Advice from Building Large-Sc.pdf
-Name3[$e]=Monnier_Sperber_Evolution of Emacs Lisp.pdf
-Name4[$e]=Bryant_2010_Computer systems. A programmer s perspective. 2nd edition.pdf
-Name5[$e]=Bryant_O'Hallaron_2016_Computer systems. A programmer s perspective. 3rd edition.pdf
-Name6[$e]=CH008.pdf
+File1[$e]=$HOME/04Personal/Info/cv/简历-王文鑫-2020.pdf
+File10[$e]=$HOME/00Collection/Archive/Learning Technique/HowtoReadPaper.pdf
+File2[$e]=$HOME/00Collection/Archive/Networking/Hardware/Ortiz et al_2013_Affinity-Based Network Interfaces for Efficient Communication on Multicore.pdf
+File3[$e]=$HOME/00Collection/Archive/Algorithms/Cormen_2009_Introduction to algorithms.pdf
+File4[$e]=$HOME/02Projects/zbackup/SDN/multi-nfv-migration/multi-nfv-migration-paper/multi-nfv-migration.pdf
+File5[$e]=$HOME/02Projects/zbackup/SDN/opennf/NFmigration-v5.pdf
+File6[$e]=$HOME/02Projects/zbackup/NetLab/research/flowlabel/毕业-wwx/wwx_thesismain-scan.pdf
+File7[$e]=$HOME/04Personal/Info/cv/简历-王文鑫-2021.pdf
+File8[$e]=$HOME/00Collection/Archive/Programming Language/Lisp/Elisp/Monnier_Sperber_Evolution of Emacs Lisp.pdf
+File9[$e]=$HOME/00Collection/Archive/Programming Language/Compiler/Wirth_1996_Compiler construction.pdf
+Name1[$e]=简历-王文鑫-2020.pdf
+Name10[$e]=HowtoReadPaper.pdf
+Name2[$e]=Ortiz et al_2013_Affinity-Based Network Interfaces for Efficient Communication on Multicore.pdf
+Name3[$e]=Cormen_2009_Introduction to algorithms.pdf
+Name4[$e]=multi-nfv-migration.pdf
+Name5[$e]=NFmigration-v5.pdf
+Name6[$e]=wwx_thesismain-scan.pdf
+Name7[$e]=简历-王文鑫-2021.pdf
+Name8[$e]=Monnier_Sperber_Evolution of Emacs Lisp.pdf
+Name9[$e]=Wirth_1996_Compiler construction.pdf

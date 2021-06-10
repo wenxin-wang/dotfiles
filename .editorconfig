@@ -2,7 +2,7 @@
 indent_style = space
 indent_size = 4
 
-[*.{js,py,el}]
+[*.{js,py,el,tex}]
 indent_style = space
 indent_size = 2
 
