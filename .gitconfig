@@ -31,8 +31,11 @@
 [color]
     ui = auto
 [core]
-    pager = diff-so-fancy | less --tabs=4 -RFX
+    # pager = diff-so-fancy | less --tabs=4 -RFX
+    pager = git-split-diffs --color | less -RFX
 [pull]
     ff = only
 [include]
     path = .gitconfig.local
+[split-diffs]
+    theme-name = solarized-light
