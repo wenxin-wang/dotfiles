@@ -1,3 +1,10 @@
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
 [bar/template]
 monitor = ${env:MONITOR:}
 
@@ -58,35 +65,35 @@ modules-left = wlan eth
 modules-center =
 modules-right = powermenu
 
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-pin-workspaces = true
-index-sort = true
-wrapping-scroll = false
-
-label-mode-padding = 2
-label-mode-foreground = #1c1c22
-label-mode-background = #1c1c22
-
-label-visible = %index%
-label-visible-background = #3e646f
-label-visible-foreground = #1c1c22
-label-visible-padding = 2
-
-label-unfocused = %index%
-label-unfocused-background = #4d737e
-label-unfocused-foreground = #1c1c22
-label-unfocused-padding = 2
-
-label-focused = %index%
-label-focused-background = #5c828d
-label-focused-foreground = #1c1c22
-label-focused-padding = 2
-
-label-urgent = %index%
-label-urgent-background = #BA2922
-label-urgent-padding = 2
+# [module/i3]
+# type = internal/i3
+# format = <label-state> <label-mode>
+# pin-workspaces = true
+# index-sort = true
+# wrapping-scroll = false
+# 
+# label-mode-padding = 2
+# label-mode-foreground = #1c1c22
+# label-mode-background = #1c1c22
+# 
+# label-visible = %index%
+# label-visible-background = #3e646f
+# label-visible-foreground = #1c1c22
+# label-visible-padding = 2
+# 
+# label-unfocused = %index%
+# label-unfocused-background = #4d737e
+# label-unfocused-foreground = #1c1c22
+# label-unfocused-padding = 2
+# 
+# label-focused = %index%
+# label-focused-background = #5c828d
+# label-focused-foreground = #1c1c22
+# label-focused-padding = 2
+# 
+# label-urgent = %index%
+# label-urgent-background = #BA2922
+# label-urgent-padding = 2
 
 [module/wlan]
 type = internal/network
@@ -211,10 +218,3 @@ use-ui-max = true
 ; Interval for volume increase/decrease (in percent points)
 ; Default: 5
 interval = 5
-
-[settings]
-screenchange-reload = true
-
-[global/wm]
-margin-top = 0
-margin-bottom = 0
