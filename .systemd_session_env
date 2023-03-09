@@ -1,6 +1,0 @@
-SSH_AUTH_SOCK=/run/user/$UID/keyring/ssh
-GTK_IM_MODULE=fcitx
-QT_IM_MODULE=fcitx
-XMODIFIERS=@im=fcitx
-LC_CTYPE="zh_CN.utf-8"
-PATH="/home/wenxin/.bin:/home/wenxin/.local/bin:/home/wenxin/Projects/golang/bin:/home/wenxin/.pub-cache/bin:/opt/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/flutter/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"

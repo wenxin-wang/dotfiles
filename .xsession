@@ -8,6 +8,12 @@ set -a
 . ~/.xsession_env
 set +a
 
+. ~/.profile
+
+# compton &
+
+# xss-lock -- slock &
+
 # rand_bg
-xkb-custom
+# xkb-custom
 dex -a
