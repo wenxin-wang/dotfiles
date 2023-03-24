@@ -19,8 +19,8 @@ font xft:Sarasa Mono SC 13
 
 floating_modifier $mod
 
-bindsym --release Print exec --no-startup-id gnome-screenshot
-bindsym --release $mod+Print exec --no-startup-id gnome-screenshot -i
+bindsym --release Print exec --no-startup-id flameshot screen -p ~/
+bindsym --release $mod+Print exec --no-startup-id flameshot gui
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1% #increase sound volume
