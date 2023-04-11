@@ -5,3 +5,7 @@ fi
 if [ -r $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh ]; then
   . $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
 fi
+
+if [ -d $HOME/.nix-profile/share ]; then
+  export XDG_DATA_DIRS=$HOME/.nix-profile/share:$XDG_DATA_DIRS
+fi
