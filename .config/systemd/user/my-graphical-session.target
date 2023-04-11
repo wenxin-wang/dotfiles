@@ -1,0 +1,4 @@
+[Unit]
+Description=My Graphical Session
+Requires=graphical-session-pre.target
+BindsTo=graphical-session.target
