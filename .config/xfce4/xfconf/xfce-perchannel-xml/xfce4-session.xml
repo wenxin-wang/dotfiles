@@ -41,6 +41,14 @@
     </property>
   </property>
   <property name="compat" type="empty">
-    <property name="LaunchGNOME" type="bool" value="true"/>
+    <property name="LaunchGNOME" type="bool" value="false"/>
+  </property>
+  <property name="startup" type="empty">
+    <property name="ssh-agent" type="empty">
+      <property name="enabled" type="bool" value="false"/>
+    </property>
+    <property name="gpg-agent" type="empty">
+      <property name="enabled" type="bool" value="false"/>
+    </property>
   </property>
 </channel>
