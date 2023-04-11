@@ -30,6 +30,7 @@
     # Config management
     pkgs.vcsh
     # Dev tools
+    pkgs.alacritty
     pkgs.git
     pkgs.git-lfs
     pkgs.ranger
