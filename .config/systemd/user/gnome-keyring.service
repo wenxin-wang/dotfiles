@@ -1,0 +1,9 @@
+[Unit]
+Description=Gnome keyring daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env gnome-keyring-daemon --start --components=ssh,pkcs11,secrets
+
+[Install]
+WantedBy=graphical-session.target
