@@ -11,7 +11,8 @@
 
    ;; Terminal.
    ;; "kitty"
-   "alacritty"
+   ;; "alacritty"
+   "rxvt-unicode"
 
    ;; Aesthetic.
    "python-pywal"

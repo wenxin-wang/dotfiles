@@ -27,10 +27,11 @@
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
-from libqtile.utils import guess_terminal
+# from libqtile.utils import guess_terminal
 
 mod = "mod4"
-terminal = guess_terminal()
+# terminal = guess_terminal()
+terminal = "urxvtc"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
