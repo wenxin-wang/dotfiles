@@ -9,6 +9,6 @@ export SSL_CERT_DIR="$GUIX_PROFILE_BASE/etc/ssl/certs"
 export SSL_CERT_FILE="$GUIX_PROFILE_BASE/etc/ssl/certs/ca-certificates.crt"
 export GIT_SSL_CAINFO="$SSL_CERT_FILE"
 
-export XDG_CONFIG_DIRS=$GUIX_PROFILE_BASE/base/base/etc/xdg:$XDG_CONFIG_DIRS
-export XDG_DATA_DIRS=$GUIX_PROFILE_BASE/base/base/share:$XDG_DATA_DIRS
+export XDG_CONFIG_DIRS=$GUIX_PROFILE_BASE/etc/xdg:$XDG_CONFIG_DIRS
+export XDG_DATA_DIRS=$GUIX_PROFILE_BASE/share:$XDG_DATA_DIRS
 unset GUIX_PROFILE
