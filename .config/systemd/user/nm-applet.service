@@ -1,0 +1,9 @@
+[Unit]
+Description=Gnome network manager applet
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env nm-applet
+
+[Install]
+WantedBy=graphical-session.target
