@@ -1,0 +1,9 @@
+[Unit]
+Description=Fcitx5 Daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env fcitx5
+
+[Install]
+WantedBy=graphical-session.target
