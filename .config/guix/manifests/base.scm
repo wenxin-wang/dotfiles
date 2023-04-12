@@ -8,10 +8,9 @@
 
    "emacs"
    "emacs-clang-format"
-   "emacs-rime"
 
    ;; Input method.
-   "fcitx-configtool"
+   "fcitx5-configtool"
    "fcitx5"
    "fcitx5-gtk"
    "fcitx5-rime"
