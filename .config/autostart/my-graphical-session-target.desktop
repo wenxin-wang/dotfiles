@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=My graphical-session.target
-GenericName=My Graphical Session Target
-Exec=/usr/bin/systemctl --user start my-graphical-session.target
-Terminal=false
-Type=Application
