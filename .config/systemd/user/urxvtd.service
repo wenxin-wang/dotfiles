@@ -1,0 +1,9 @@
+[Unit]
+Description=Rxvt-unicode Daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env urxvtd -q -o
+
+[Install]
+WantedBy=graphical-session.target
