@@ -1,4 +1,8 @@
 export GUIX_PROFILE_DESKTOP="$HOME/.guix-extra-profiles/desktop/desktop"
+if [ ! -d $GUIX_PROFILE_DESKTOP ]; then
+    unset GUIX_PROFILE_DESKTOP
+    return
+fi
 
 GUIX_PROFILE=$GUIX_PROFILE_DESKTOP
 

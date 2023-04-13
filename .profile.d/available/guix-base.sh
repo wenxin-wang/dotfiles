@@ -1,4 +1,8 @@
 export GUIX_PROFILE_BASE="$HOME/.guix-extra-profiles/base/base"
+if [ ! -d $GUIX_PROFILE_BASE ]; then
+    unset GUIX_PROFILE_BASE
+    return
+fi
 
 GUIX_PROFILE=$GUIX_PROFILE_BASE
 . "$GUIX_PROFILE_BASE/etc/profile"
