@@ -1,0 +1,71 @@
+* Quirks
+
+- pyim no input in vterm-mode
+  - Has input with read-only-mode turned off, but hangs emacs after confirming selection
+
+* Notes
+
+- org-roam
+
+https://zzamboni.org/post/beautifying-org-mode-in-emacs/
+
+* key bindings
+
+* smart parens
+
+https://github.com/Fuco1/smartparens
+
+https://github.com/luxbock/evil-cleverparens
+
+* Completion
+
+https://github.com/minad/vertico
+
+* c/c++
+
+- [X] flycheck
+- [X] company
+- [X] lsp-mode
+- [X] ccls
+- [X] clang-format
+
+* editing
+
+- [X] (builtin M-\) space deleting
+- [X] word selection -> symbol selection
+- [X] diminish modes
+- spacemacs transient modes: hydra
+- better keybindings
+  - [X] font zooming (builtin C-x C-0 for restore)
+  - maybe even for ivy
+  - or deshadow evil from
+    - but my hand hurts
+    - lsp ui flycheck
+    - eldoc help
+
+* project management
+
+- [X] projectile
+- [X] treemacs for current directory/project
+
+* eye candy
+
+- [X] font
+- [X] powerline
+
+* Window management
+
+- group window/buffer by project
+
+* Completion
+
+- vertico
+
+* Search
+
+- Swiper unifiy yank with isearch
+  - how spacemacs '#' works: a hydra mode
+
+* Scratches
+
+- [X] deft
