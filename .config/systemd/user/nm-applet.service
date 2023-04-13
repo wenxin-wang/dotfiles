@@ -1,6 +1,8 @@
 [Unit]
 Description=Gnome network manager applet
 PartOf=graphical-session.target
+Wants=gnome-keyring.service
+After=gnome-keyring.service
 
 [Service]
 ExecStart=/usr/bin/env nm-applet
