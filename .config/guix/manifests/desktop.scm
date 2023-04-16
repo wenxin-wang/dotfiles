@@ -6,6 +6,9 @@
    "xfce"
    "xfce4-screensaver"
 
+   ;; Notification
+   "dunst"
+
    ;; Media control.
    "brightnessctl"
 

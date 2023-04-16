@@ -1,0 +1,9 @@
+[Unit]
+Description=Dunst Notification Daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env dunst
+
+[Install]
+WantedBy=graphical-session.target

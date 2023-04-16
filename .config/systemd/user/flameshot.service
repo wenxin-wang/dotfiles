@@ -1,0 +1,9 @@
+[Unit]
+Description=Flameshot
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env flameshot
+
+[Install]
+WantedBy=graphical-session.target
