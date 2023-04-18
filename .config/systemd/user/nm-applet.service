@@ -8,4 +8,4 @@ After=gnome-keyring.service
 ExecStart=/usr/bin/env nm-applet
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=my-graphical-session.target
