@@ -1,6 +1,6 @@
 [Unit]
 Description=XFCE settings daemon
-PartOf=graphical-session.target
+PartOf=my-graphical-session.target
 
 [Service]
 ExecStart=/usr/bin/env xfsettingsd

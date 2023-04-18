@@ -1,6 +1,6 @@
 [Unit]
 Description=Gnome network manager applet
-PartOf=graphical-session.target
+PartOf=my-graphical-session.target
 Wants=gnome-keyring.service
 After=gnome-keyring.service
 
