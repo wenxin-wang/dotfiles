@@ -1,8 +1,12 @@
 (specifications->manifest
  '(
    ;; WM.
+   ;;"qtile"
+   ;;"i3-wm"
+   ;;"i3status"
+   "herbstluftwm"
    "picom"
-   "qtile"
+   "polybar"
    "xfce"
    "xfce4-screensaver"
 
@@ -13,8 +17,8 @@
    "brightnessctl"
 
    ;; Terminal.
-   ;; "kitty"
-   ;; "alacritty"
+   ;;"kitty"
+   ;;"alacritty"
    "rxvt-unicode"
 
    ;; Aesthetic.

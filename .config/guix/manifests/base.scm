@@ -14,15 +14,22 @@
    "fcitx5"
    "fcitx5-gtk"
    "fcitx5-rime"
+   "librime"
 
    "poetry"
    "python"
    "python-numpy"
    "python-pillow"
 
-   "ranger"
+   "arandr"
    "flameshot"
+   "ranger"
    "rofi"
+
+   "vcsh"
+   "git-lfs"
+
+   "htop"
 
    "man-db"
    "info-reader"
