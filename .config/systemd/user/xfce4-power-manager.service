@@ -1,0 +1,9 @@
+[Unit]
+Description=XFCE power manager
+PartOf=my-graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env xfce4-power-manager
+
+[Install]
+WantedBy=my-graphical-session.target
