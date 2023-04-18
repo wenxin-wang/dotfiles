@@ -5,10 +5,10 @@
    ;;"i3-wm"
    ;;"i3status"
    "herbstluftwm"
-   "picom"
+   ;;"picom"
    "polybar"
-   "xfce"
-   "xfce4-screensaver"
+   ;;"xfce"
+   ;;"xfce4-screensaver"
 
    ;; Notification
    "dunst"
