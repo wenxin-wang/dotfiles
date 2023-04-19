@@ -1,0 +1,9 @@
+[Unit]
+Description=Autorandr Launcher
+PartOf=my-graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env autorandr-launcher
+
+[Install]
+WantedBy=my-graphical-session.target

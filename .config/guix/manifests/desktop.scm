@@ -1,6 +1,7 @@
 (specifications->manifest
  '(
    ;; WM.
+   "autorandr"
    ;;"qtile"
    ;;"i3-wm"
    ;;"i3status"
