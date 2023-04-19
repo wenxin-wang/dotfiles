@@ -8,6 +8,7 @@
    "herbstluftwm"
    ;;"picom"
    "polybar"
+   "nitrogen"
    ;;"xfce"
    ;;"xfce4-screensaver"
 
