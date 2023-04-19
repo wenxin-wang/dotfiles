@@ -16,6 +16,7 @@
 
    ;; Media control.
    "brightnessctl"
+   "pasystray"
 
    ;; Terminal.
    ;;"kitty"

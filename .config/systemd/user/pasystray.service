@@ -1,9 +1,9 @@
 [Unit]
-Description=Dunst Notification Daemon
+Description=Pulseaudio tray
 PartOf=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/env dunst
+ExecStart=/usr/bin/env pasystray
 
 [Install]
 WantedBy=my-graphical-session.target

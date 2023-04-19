@@ -6,4 +6,4 @@ PartOf=graphical-session.target
 ExecStart=/usr/bin/env gnome-keyring-daemon --start --components=ssh,pkcs11,secrets
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=my-graphical-session.target
