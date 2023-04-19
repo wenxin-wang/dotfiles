@@ -37,7 +37,7 @@ herbstclient --idle "tag_*" 2>/dev/null | {
                     '#')
                         # the tag is viewed on the specified MONITOR and it is focused.
                         # TODO Add your formatting tags
-                        echo %{B#ffffff}%{u#ce0000}%{+u}
+                        echo %{F#6666dd}%{B#ffffff}%{u#7777dd}%{+u}
                         ;;
                     '-')
                         # the tag is viewed on a different MONITOR, but this monitor is not focused.
@@ -52,12 +52,13 @@ herbstclient --idle "tag_*" 2>/dev/null | {
                     '!')
                         # the tag contains an urgent window
                         # TODO Add your formatting tags
-                        echo %{B#ffffff}%{F#ff0000}
+                        echo %{B#ffffff}%{u#ce0000}%{+u}
                         ;;
                 esac
 
                 # focus the monitor of the current bar before switching tags
-                echo "%{A1:herbstclient focus_monitor ${MON_IDX}; herbstclient use ${i:1}:}  ${c}:%{F#7777f7}${i:1}%{F-}  %{A -u -o F- B-}"
+                # echo "%{A1:herbstclient focus_monitor ${MON_IDX}; herbstclient use ${i:1}:}  %{F#cccccc}${c}:%{F-}${i:1}  %{A -u -o F- B-}"
+                echo "%{A1:herbstclient focus_monitor ${MON_IDX}; herbstclient use ${i:1}:}  ${c}:${i:1}  %{A -u -o F- B-}"
                 c=$((c+1))
             done
 
