@@ -1,0 +1,9 @@
+[Unit]
+Description=Herbstluftwm
+PartOf=my-graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env herbstluftwm --locked
+
+[Install]
+WantedBy=my-graphical-session.target
