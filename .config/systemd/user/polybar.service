@@ -1,0 +1,9 @@
+[Unit]
+Description=Polybar
+PartOf=my-graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/env polybar
+
+[Install]
+WantedBy=my-graphical-session.target
