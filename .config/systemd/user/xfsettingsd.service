@@ -3,7 +3,7 @@ Description=XFCE settings daemon
 PartOf=my-graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/env xfsettingsd
+ExecStart=/usr/bin/env xfsettingsd --no-daemon
 
 [Install]
 WantedBy=my-graphical-session.target
