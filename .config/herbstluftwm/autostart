@@ -68,6 +68,7 @@ hc keybind $Mod-Control-Up      resize up +$resizestep
 hc keybind $Mod-Control-Right   resize right +$resizestep
 
 hc rename default inbox || true
+hc add tmp
 for i in {0..8} ; do
    hc keybind "$Mod-$((i+1))" use_index "$i"
    hc keybind "$Mod-Shift-$((i+1))" move_index "$i"
@@ -109,10 +110,13 @@ hc keybind $Mod-Tab         spawn rofi -show-icons -terminal urxvtc -show window
 hc keybind $Mod-c cycle_all
 hc keybind $Mod-u jumpto urgent
 
+hc set default_frame_layout grid
+
 # theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
-hc set frame_border_active_color '#222222cc'
+# hc set frame_border_active_color '#222222cc'
+hc set frame_border_active_color '#ADD8E6'
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
 hc set frame_bg_active_color '#345F0Caa'
@@ -127,7 +131,7 @@ hc attr theme.title_when multiple_tabs
 hc attr theme.title_font 'Sarasa Mono SC:pixelsize=17'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.title_depth 3  # space below the title's baseline
-hc attr theme.active.color '#345F0Cef'
+hc attr theme.active.color '#ADD8E6'
 hc attr theme.title_color '#ffffff'
 hc attr theme.normal.color '#323232dd'
 hc attr theme.urgent.color '#7811A1dd'
